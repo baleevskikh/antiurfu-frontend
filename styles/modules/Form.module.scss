@@ -1,0 +1,41 @@
+@import "../variables";
+
+.form__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $entity-background-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.form__body {
+  max-width: 350px;
+  text-align: center;
+  margin: 0 20px;
+}
+
+.logo {
+  display: block;
+  text-align: center;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 500;
+  color: $muted-text-color;
+  margin-bottom: $xl;
+  margin-top: $sm/4;
+}
+
+.form__footer {
+  font-size: 16px;
+  color: $muted-text-color;
+  font-weight: 400;
+  text-align: center;
+  margin-top: $lg;
+}

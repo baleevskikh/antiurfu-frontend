@@ -1,0 +1,59 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoints";
+
+.header {
+  background-color: $entity-background-color;
+  border-bottom: 1px solid $border-color;
+  padding: $sm 0;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin-bottom: $lg;
+  z-index: 50;
+}
+
+.logo {
+  display: block;
+  @include mobile {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+  }
+}
+
+.logo_image {
+  display: block;
+}
+
+.left_block {
+  display: flex;
+  align-items: center;
+}
+
+.right_block {
+  display: flex;
+  align-items: center;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.right_block__mobile {
+  display: none;
+
+  @include mobile {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.toggle_sidebar {
+  display: block;
+
+  @include desktop {
+    display: none;
+  }
+}

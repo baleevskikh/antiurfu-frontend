@@ -1,0 +1,35 @@
+@import "@/styles/variables";
+
+.nav__item {
+  font-size: 16px;
+  font-weight: 500;
+  display: flex;
+  padding: 10px 28px;
+  align-items: center;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 4px;
+  border: 1px solid $body-background-color;
+  color: $body-text-color;
+
+  &.active {
+    background-color: $entity-background-color;
+    border: 1px solid $border-color;
+  }
+
+  &:hover {
+    border: 1px solid $hover-background-color;
+    background-color: $hover-background-color;
+  }
+
+  &.active:hover {
+    background-color: $entity-background-color;
+    border: 1px solid $border-color;
+  }
+}
+
+.nav__item div {
+  display: flex;
+  align-items: center;
+}
+

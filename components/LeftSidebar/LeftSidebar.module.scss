@@ -1,0 +1,20 @@
+@import "../../styles/variables";
+@import "../../styles/breakpoints";
+
+.left_sidebar {
+  min-width: 256px;
+  position: relative;
+  margin-right: $xxl;
+  display: none;
+
+  @include desktop {
+    display: block;
+  }
+}
+
+.sticky_container {
+  position: sticky;
+  width: auto;
+  overflow-y: auto;
+  top: 83px;
+}

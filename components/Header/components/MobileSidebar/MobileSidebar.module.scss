@@ -1,0 +1,74 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoints";
+
+.mobile_sidebar__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+
+  &.show {
+    display: block;
+
+    @include tablet {
+      display: none;
+    }
+  }
+}
+
+.mobile_sidebar__background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  -webkit-backdrop-filter: blur(0);
+  backdrop-filter: blur(0);
+  background-color: rgba(0, 0, 0, 0);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.mobile_sidebar {
+  position: relative;
+  width: auto;
+  height: 100%;
+  background-color: $body-background-color;
+  padding: $sm $content-padding;
+  z-index: 50;
+  left: -296px;
+  transition: all .1s;
+
+  @include rwd(330) {
+    width: 256px;
+  }
+}
+
+.mobile_sidebar__header {
+  position: relative;
+  margin-bottom: 33px;
+
+  .header__title {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    font-weight: 700;
+    font-size: 24px;
+  }
+}
+
+.fade {
+  .mobile_sidebar__background {
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+    background-color: rgba(0, 0, 0, .3);
+  }
+  .mobile_sidebar {
+    left: 0;
+  }
+}

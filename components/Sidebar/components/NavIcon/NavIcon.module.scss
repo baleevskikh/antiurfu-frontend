@@ -1,0 +1,27 @@
+.nav__icon {
+  display: flex;
+  width: 30px;
+  height: 30px;
+  border-radius: 5px;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  background-color: #DFF4FC;
+  color: #3EC9F6;
+
+  &.home {
+    background-color: #EAF0FE;
+    color: #2C70F4;
+  }
+
+  &.bookmark {
+    background-color: #FAECED;
+    color: #CC444A;
+  }
+
+  &.text {
+    background-color: #F0EBFD;
+    color: #683AEF;
+  }
+}

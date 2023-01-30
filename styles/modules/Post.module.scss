@@ -1,0 +1,48 @@
+@import "../variables";
+@import "../breakpoints";
+
+.post {
+  background-color: $entity-background-color;
+  border: 1px solid $border-color;
+  padding: 20px;
+  border-radius: 20px;
+  margin-bottom: $sm;
+
+  @include mobile {
+    padding: $content-padding;
+    border-radius: 0;
+    border-width: 1px 0;
+  }
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: $xs;
+  color: $body-text-color;
+  line-height: 1.2;
+
+  @include mobile {
+    font-size: 18px;
+  }
+}
+.title:hover {
+  color: $primary-text-color;
+}
+
+.snippet {
+  font-size: 16px;
+  margin-bottom: $md;
+  color: #3F3F3F;
+  line-height: 1.5;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.post__button {
+  @include mobile {
+    width: 100%;
+  }
+}

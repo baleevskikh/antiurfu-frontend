@@ -1,0 +1,45 @@
+@import "../variables";
+
+body {
+  background-color: $body-background-color;
+  color: $body-text-color;
+}
+
+.content {
+  width: 100%;
+}
+
+.user__info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: $xs;
+
+  .user__name {
+    font-weight: 700;
+    font-size: 13px;
+    color: $body-text-color;
+    text-decoration: none;
+
+    &:hover {
+      color: $primary-text-color;
+    }
+  }
+  .date {
+    font-weight: 500;
+    font-size: 13px;
+    color: $muted-text-color;
+  }
+}
+
+a {
+  color: $link-color;
+  text-decoration: none;
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline;
+}
+b {
+  font-weight: 700;
+}

@@ -1,0 +1,7 @@
+@import "@/styles/variables";
+
+.separator {
+  margin: 9px 0 0 28px + 30 + 10;
+  padding-top: 9px;
+  border-top: 1px solid $border-color;
+}

@@ -1,0 +1,8 @@
+@import "@/styles/variables";
+@import "@/styles/breakpoints";
+
+.container {
+  max-width: $max-content;
+  padding: 0 $content-padding;
+  margin: 0 auto;
+}
