@@ -1,0 +1,54 @@
+:root {
+  // Page Colors
+  --html-background-color: #F8F9FA;
+  --background-color: #fff;
+  --border-color: #E4E5E7;
+
+  // Text Colors
+  --html-tet-color: #3F3F3F;
+  --primary-text-color: #000;
+  --muted-text-color: #838C98;
+  --link-color: #345881;
+  --icons-color: #8D949D;
+
+  // Default Button
+  --default-button-background-color: #F2F3F5;
+  --default-button-hover-color: #E6E7E9;
+  --default-button-text-color: #000;
+
+  // Primary Button
+  --primary-button-background-color: #000;
+  --primary-button-hover-color: #262626;
+  --primary-button-text-color: #fff;
+
+  // Border Button
+  --border-button-background-color: #fff;
+  --border-button-hover-color: #F3F3F3;
+  --border-button-text-color: #000;
+
+  //// Input Default
+  //--input-background-color: transparent;
+  //--input-placeholder-color: #838C98;
+  //--input-border-color: #DEDEE0;
+  //
+  //// Input Fill
+  //$input-background-color: #F0F2F5;
+  //$input-placeholder-color-2: #838C98;
+  //$hover-background-color: #F2F3F5;
+  //
+  //// Avatar
+  //$avatar-background-color: #E6E8EB;
+  //$avatar-text-color: #AFB7C1;
+}
+
+// Page Colors
+$html-background-color: #F8F9FA;
+$background-color: #fff;
+$border-color: #E4E5E7;
+
+// Text Colors
+$html-tet-color: #3F3F3F;
+$primary-text-color: #000;
+$muted-text-color: #838C98;
+$link-color: #345881;
+$icons-color: #8D949D;

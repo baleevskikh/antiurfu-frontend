@@ -1,6 +1,6 @@
-import React, {FC, InputHTMLAttributes} from 'react'
-import styles from "./Input.module.scss"
-import clsx from "clsx";
+import React, { FC, InputHTMLAttributes } from 'react'
+import styles from './Input.module.scss'
+import clsx from 'clsx'
 
 interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     className?: string
@@ -9,24 +9,25 @@ interface InputProps extends InputHTMLAttributes<HTMLInputElement> {
     hasBorder?: boolean
 }
 
-const Input: FC<InputProps> =
-    ({
-         className,
-         mode = 'md',
-         stretched,
-         hasBorder = false,
-         ...restProps
-     }) => {
-        return (
-            <input className={clsx(
-                styles.input,
-                styles[mode],
-                stretched && styles.stretched,
-                hasBorder && styles.input_has_border,
-                className
-            )} {...restProps}/>
-        )
+const Input: FC<InputProps> = (
+    {
+        className,
+        mode = 'md',
+        stretched,
+        hasBorder = false,
+        ...restProps
     }
+) => {
+    return (
+        <input className={clsx(
+            styles.input,
+            styles[mode],
+            stretched && styles.stretched,
+            hasBorder && styles.input_has_border,
+            className
+        )} {...restProps} />
+    )
+}
 
-export {type InputProps}
+export { type InputProps }
 export default Input

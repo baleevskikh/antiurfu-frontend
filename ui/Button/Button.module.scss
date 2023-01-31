@@ -7,7 +7,7 @@
   font-weight: 500;
   cursor: pointer;
   margin: 0;
-  transition: all .15s;
+  transition: $transition-default;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -121,10 +121,24 @@
 
 .disabled {
   opacity: .64;
+  //pointer-events: none;
+  cursor: not-allowed;
+}
+
+.loading {
+  cursor: wait;
+}
+
+.loading div span {
+  opacity: 0;
+}
+
+.placeholder {
+  opacity: .64;
   pointer-events: none;
   cursor: not-allowed;
 }
 
-.loading div span {
+.placeholder div span {
   opacity: 0;
 }

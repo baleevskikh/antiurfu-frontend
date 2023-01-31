@@ -1,8 +1,8 @@
 @import "@/styles/variables";
 
 .input {
-  background-color: $input-background-color;
-  border: 1px solid $input-background-color;
+  background-color: $default-input-background-color;
+  border: 1px solid $input-border-color;
   border-radius: 10px;
   transition: all .3s;
   box-sizing: border-box;
@@ -14,7 +14,7 @@
 }
 
 .input::placeholder {
-  color: $input-placeholder-color-2;
+  color: $input-placeholder-color;
 }
 
 .input:placeholder-shown {
@@ -22,7 +22,7 @@
 }
 
 .input:hover {
-  background-color: $hover-background-color;
+  //background-color: $hover-background-color;
   border: 1px solid $input-border-color;
   outline: 0;
 
